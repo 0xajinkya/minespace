@@ -1,37 +1,23 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Container, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import LeftBar from '../components/LeftBar'
+import Main from '../components/Main'
+import RightBar from '../components/RightBar'
+
 
 export default function Home() {
   return (
     <Box
-      width='100%'
-      height='100vh'
-      display='flex'
-      justifyContent='center'
-      alignItems='center'
-      flexDirection='column'
-      gap='20px'
+      display={'flex'}
+      width={'100%'}
+      height={'100vh'}
+      bgImage={'/img/doodle.png'}
+      bgBlendMode
     >
-      <Text
-        fontFamily='Comfortaa'
-        fontSize='40px'
-      >
-        Hello There
-      </Text>
-      <Text
-        fontFamily='Nunito'
-        fontSize='40px'
-      >
-        Hello There
-      </Text>
-      <Text
-        fontFamily='Questrial'
-        fontSize='40px'
-      >
-        Hello There
-      </Text>
+      <LeftBar />
+      <Main />
+      <RightBar />
     </Box>
   )
 }
