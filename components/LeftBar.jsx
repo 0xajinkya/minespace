@@ -9,7 +9,6 @@ import { BiSearchAlt } from 'react-icons/bi'
 import { FcLike } from 'react-icons/fc'
 
 
-
 const LeftBar = () => {
   return (
     <Box
